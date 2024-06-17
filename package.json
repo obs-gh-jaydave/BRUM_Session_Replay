@@ -1,0 +1,17 @@
+{
+  "name": "session-replay-project",
+  "version": "1.0.0",
+  "description": "A project to capture session replay data using rrweb and send it to Observe.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "dependencies": {
+    "rrweb": "^1.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "author": "Jay Davé",
+  "license": "MIT"
+}
