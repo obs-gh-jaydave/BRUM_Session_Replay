@@ -1,4 +1,4 @@
-const observeEndpoint = 'https://{OBSERVE_CUSTOMER_ID}.collect.observeinc.com/v1/http'; // Replace with your Observe endpoint
+const observeEndpoint = 'https://{OBSERVE_TENAS}.collect.observeinc.com/v1/http'; // Replace with your Observe endpoint
 const observeApiKey = '{OBSERVE_TOKEN}'; // Replace with your Observe API key
 
 export async function sendEventsToObserve(events) {

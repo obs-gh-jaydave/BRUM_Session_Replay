@@ -22,6 +22,18 @@ document.getElementById('stopRecording').addEventListener('click', () => {
   if (events.length > 0) {
     console.log('Sending events:', events);
     sendEventsToObserve(events);
+    // Render the recorded session
+    const replayContainer = document.getElementById('replayContainer');
+    replayContainer.innerHTML = ''; // Clear previous replay if any
+
+    new rrwebPlayer({
+      target: replayContainer, // The container element
+      props: {
+        events: events,
+        width: 800,
+        height: 600,
+      },
+    });
   } else {
     console.log('No events to send.');
   }
